@@ -1,0 +1,28 @@
+.header {
+
+    .logo-mob {
+        display: none;
+        padding: 24px;
+    }
+
+    &__logo {
+        img {
+            display: none;
+        }
+    }
+
+    &__menu { // Mobile Menu
+        
+        > span {
+            display: none;
+            width: 26px;
+            height: 2px;
+            background-color: $dark;
+
+            &:not(:last-child){
+                margin-bottom: 3px;
+            }
+        }
+    }
+
+}
