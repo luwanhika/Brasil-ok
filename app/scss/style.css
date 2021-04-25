@@ -204,4 +204,55 @@ body {
   font-weight: 700;
   font-style: normal;
 }
+
+.header footer {
+  width: 100%;
+  background: #f7f7f7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header footer .footer-contatos {
+  position: relative;
+  width: 80%;
+  margin-left: 140px;
+}
+
+.header footer .footer-text {
+  margin-top: 28px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #5e5e5e;
+}
+
+.header footer .footer-descr {
+  margin: 8px 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #2964ae;
+}
+
+.header footer .footer-horario {
+  font-size: 16px;
+  font-weight: 400;
+  color: #5e5e5e;
+}
+
+.header footer .rect {
+  width: 80%;
+  margin: 25px 0px 25px 140px;
+  max-width: 750px;
+  height: 1px;
+  background: #9e9e9e;
+}
+
+.header footer .footer-nota {
+  margin-left: 140px;
+  margin-bottom: 34px;
+  width: 90%;
+  max-width: 670px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #9e9e9e;
+}
 /*# sourceMappingURL=style.css.map */

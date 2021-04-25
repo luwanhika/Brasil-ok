@@ -164,4 +164,54 @@
         font-style: normal;
     }
 
+    footer {
+        width: 100%;
+        background: $grey-3;
+        box-sizing: border-box;
+
+        .footer-contatos {
+            position: relative;
+            width: 80%;
+            margin-left: 140px;
+        }
+    
+        .footer-text {
+            margin-top: 28px;
+            font-size: 16px;
+            font-weight: 400;
+            color: $grey-1;
+        }
+        .footer-descr {
+            margin: 8px 0;
+            font-size: 16px;
+            font-weight: 700;
+            color: $principal-2;
+        }
+    
+        .footer-horario {
+            font-size: 16px;
+            font-weight: 400;
+            color: $grey-1;
+        }
+    
+        .rect {
+            width: 80%;
+            margin: 25px 0px 25px 140px;
+            max-width: 750px;
+            height: 1px;
+            background: $grey-2;
+        }
+
+        .footer-nota {
+            margin-left: 140px;
+            margin-bottom: 34px;
+            width: 90%;
+            max-width: 670px;
+            font-size: 12px;
+            font-weight: 400;
+            color: $grey-2;
+        }
+    }
+
+    
 }
