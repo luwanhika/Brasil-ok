@@ -1,20 +1,19 @@
 .header {
 
-    .logo-mob {
-        display: none;
+    .logo-mob {  
         padding: 24px;
     }
 
     &__logo {
         img {
-            display: none;
+            display: block;
         }
     }
 
     &__menu { // Mobile Menu
         
         > span {
-            display: none;
+            display: block;
             width: 26px;
             height: 2px;
             background-color: $dark;
@@ -98,7 +97,7 @@
     .termos {
         width: 100%;
         max-width: 480px;
-        margin-top: 32px;
+        margin-top: 16px;
         margin-left: 140px;
         background: $grey-3;
         border-radius: 4px;
@@ -153,19 +152,14 @@
         color: $principal-2;
 
     }
-    .definir-termos button[type="submit"] {
-        display: block;
+
+    .btn-termos {
         margin-right: 56px;
-        width: 243px;
-        height: 36px;
+    }
+
+    &__cta {
         color: $white;
-        border: none;
-        border-radius: 4px;
-        background: $principal-2;
-        cursor: pointer;
-        font-size: 16px;
-        font-weight: 700;
-        font-style: normal;
+        font-size: $font-def;
     }
 
     footer {

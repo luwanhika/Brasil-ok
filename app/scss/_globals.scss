@@ -31,3 +31,28 @@ body {
     }
 }
 
+
+// Buttons
+button, .button {
+    padding: .5rem .66875rem .5rem 2rem;
+    background: $principal-2;
+    border: 0;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+// visibility 
+.hide-for-mobile {
+    // hide for tablet and mobile
+    @include breakpoint-down(medium){
+        display: none;
+    }
+}
+
+.hide-for-desktop {
+    // hide for desktop viewport widths
+    @include breakpoint-up(large){
+        display: none;
+    }
+}
