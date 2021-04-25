@@ -80,6 +80,10 @@
         color: $dark;
     }
 
+    .input-field input:nth-child(1n+2) {
+        margin-bottom: 16px;
+    }
+
     .input-field input {
         outline: none;
         width: 474px;
@@ -93,7 +97,7 @@
 
     .termos {
         width: 100%;
-        max-width: 478px;
+        max-width: 480px;
         margin-top: 32px;
         margin-left: 140px;
         background: $grey-3;
@@ -131,6 +135,12 @@
         font-size: 12px;
         font-weight: 700;
         color: $principal-2;
+    }
+
+    .termos-condicoes li img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .definir-termos {

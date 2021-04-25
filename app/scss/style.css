@@ -115,6 +115,10 @@ body {
   color: black;
 }
 
+.header .input-field input:nth-child(1n+2) {
+  margin-bottom: 16px;
+}
+
 .header .input-field input {
   outline: none;
   width: 474px;
@@ -128,7 +132,7 @@ body {
 
 .header .termos {
   width: 100%;
-  max-width: 478px;
+  max-width: 480px;
   margin-top: 32px;
   margin-left: 140px;
   background: #f7f7f7;
@@ -166,6 +170,18 @@ body {
   font-size: 12px;
   font-weight: 700;
   color: #2964ae;
+}
+
+.header .termos-condicoes li img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header .definir-termos {
