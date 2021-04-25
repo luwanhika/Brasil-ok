@@ -25,4 +25,143 @@
         }
     }
 
+    .side-brasil {
+        width: 30%;
+        min-height: 100vh;
+        background-image: url(/images/background-brasil.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .image-brasil {
+        margin-top: 24px;
+    }
+
+    .container-form {
+        width: 70%;
+    }
+
+    .container-field {
+        width: 100%;
+        max-width: 474px;
+        margin-left: 140px;
+    }
+
+    .container-field h1 {
+        position: relative;
+        font-size: 24px;
+        padding-top: 24px;
+        font-style: normal;
+        font-weight: 700;
+        color: $grey-1;
+    }
+
+    .container-field h1::after {
+        content: '';
+        width: 76px;
+        height: 4px;
+        background: $principal-1;
+        position: absolute;
+        border-radius: 4px;
+        top: 0px;
+        left: 0;
+    }
+
+    .input-field label {
+        display: block;
+    }
+
+    .input-field label {
+        padding-bottom: 8px;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 12px;
+        color: $dark;
+    }
+
+    .input-field input {
+        outline: none;
+        width: 474px;
+        height: 47px;
+        border: 1px solid $grey-2;
+        border-radius: 4px;
+        font-size: 12px;
+        padding: 16px 0px 16px 16px;
+        color: $grey-2;
+    }
+
+    .termos {
+        width: 100%;
+        max-width: 478px;
+        margin-top: 32px;
+        margin-left: 140px;
+        background: $grey-3;
+        border-radius: 4px;
+    }
+
+    .termos-condicoes > h2 {
+        padding: 16px 0px 16px 16px;
+        font-size: 12px;
+        font-weight: 700;
+        color: $dark;
+        font-style: normal;
+    }
+
+    .termos-condicoes ol {
+        padding: 0px 0px 16px 16px;
+        font-weight: 400;
+        font-size: 12px;
+        font-style: normal;
+        color: $dark;
+    }
+
+    .termos-condicoes li:nth-child(even) {
+        padding: 16px 0px;
+    }
+
+    .termos-condicoes ol span {
+        font-size: 12px;
+        font-weight: 700;
+        font-style: normal;
+        color: $dark;
+    }
+
+    .termos-condicoes ol a {
+        font-size: 12px;
+        font-weight: 700;
+        color: $principal-2;
+    }
+
+    .definir-termos {
+        max-width: 478px;
+        margin: 24px 0 0 140px;
+        margin-bottom: 100px;
+    }
+
+    .definir-termos a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 700;
+        font-style: normal;
+        color: $principal-2;
+
+    }
+    .definir-termos button[type="submit"] {
+        display: block;
+        margin-right: 56px;
+        width: 243px;
+        height: 36px;
+        color: $white;
+        border: none;
+        border-radius: 4px;
+        background: $principal-2;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 700;
+        font-style: normal;
+    }
+
 }

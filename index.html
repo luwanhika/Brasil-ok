@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="app/scss/style.scss">
     <link rel="stylesheet" href="app/scss/style.css">
     <link rel="stylesheet" href="app/scss/style.css.map">
@@ -24,12 +26,49 @@
             </a>
 
         </div><!--logo-mob-->
-        <div class="container-simular">
+        <div class="container-simular flex">
             <div class="side-brasil">
-                <a href="#" class="side__logo2">
-                    <img src="images/Logo-desk.svg" alt="Brasil ok">
-                </a>
+                <div class="image-brasil">
+                    <a href="#" class="side__logo2 flex flex-jc-c flex-ai-c">
+                        <img src="images/Logo-desk.svg" alt="Brasil ok">
+                    </a>
+                </div><!--image-brasil-->
             </div><!--side-brasil-->
+            <div class="container-form">
+                <div class="container-field">
+                    <h1>Simule seu empréstimo com taxas 
+                    a partir de 1,65%</h1>
+                    <div class="input-field">
+                        <label for="number">CPF</label>
+                        <input type="text" for="number" id="cpf" placeholder="Ex.: 123.456.789-12">
+                    </div><!--input-field-->
+                    <div class="input-field">
+                        <label for="number">Celuar</label>
+                        <input type="text" for="number" id="celular" placeholder="Ex.: (11) 956 347-789">
+                    </div><!--input-field-->
+                    <div class="input-field">
+                        <label for="email">Email</label>
+                        <input type="text" for="email" id="email" placeholder="Ex.: joao@email.com">
+                    </div><!--input-field-->
+                </div><!--containe-field-->
+                <div class="termos">
+                    <div class="termos-condicoes">
+                        <h2>Aceitando os termos a seguir, a sua simulação será mais exata:</h2>
+                    <ol>
+                        <li><span>Autorizo</span> o Brasil OK a informar e consultar os meus dados pessoais 
+                            ao sistema de informação de crédito (SCR), do Banco Central do Brasil 
+                            (BACEN), conforme disposto na resolução CMN n° 4.571 de 26 de Maio
+                            de 2017.</li>
+                        <li><span>Aceito</span> os <a href="#">Termos de Uso</a> e <a href="#">Politicas de Privacidade</a></li>
+                        <li><span>Aceito</span> receber contato sobre empréstimo consignado via <span> <img src="images/bxl-whatsapp.svg.svg" alt="Whatsapp"> Whatsapp</span> ou outro meio de contato.</li>
+                    </ol>
+                    </div><!--termos-condicoes-->
+                </div><!--termos-->
+                <div class="definir-termos flex">
+                    <button class="btn-termos" type="submit">Aceitar e continuar ></button>
+                    <a href="#">Não aceito</a>
+                </div>
+            </div><!--container-form-->
         </div><!--container-simular-->
     </section><!--header-->
 
