@@ -1,34 +1,38 @@
 .header {
+    padding: 1.25rem calc(100vw - 1200px);
+    z-index: 10;
+    position: relative;
 
-    .logo-mob {  
-        padding: 24px;
+    &__logo {
+        margin-left: 20px;
+
+        @include mobile {
+            display: none;
+        }
     }
 
+    
+}
+
+
+
+
+/*
+    .logo-mob {   
+        padding-top: 1.25rem;
+    }
+    
     &__logo {
         img {
             display: block;
         }
     }
 
-    &__menu { // Mobile Menu
-        
-        > span {
-            display: block;
-            width: 26px;
-            height: 2px;
-            background-color: $dark;
-
-            &:not(:last-child){
-                margin-bottom: 3px;
-            }
-        }
-    }
-
     .side-brasil {
         width: 30%;
-        min-height: 100vh;
+        min-height: 100%;
         background-image: url(/images/background-brasil.png);
-        background-position: center;
+        background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -49,8 +53,8 @@
 
     .container-field h1 {
         position: relative;
-        font-size: 24px;
-        padding-top: 24px;
+        font-size: 1.5rem;
+        padding-top: 1.5rem;
         font-style: normal;
         font-weight: 700;
         color: $grey-1;
@@ -72,15 +76,15 @@
     }
 
     .input-field label {
-        padding-bottom: 8px;
+        padding-bottom: 0.5rem;
         font-weight: 400;
         font-style: normal;
-        font-size: 12px;
+        font-size: 0.75rem;
         color: $dark;
     }
 
     .input-field input:nth-child(1n+2) {
-        margin-bottom: 16px;
+        margin-bottom: 1rem;
     }
 
     .input-field input {
@@ -89,8 +93,8 @@
         height: 47px;
         border: 1px solid $grey-2;
         border-radius: 4px;
-        font-size: 12px;
-        padding: 16px 0px 16px 16px;
+        font-size: 0.75rem;
+        padding: 1rem 0 1rem 1rem;
         color: $grey-2;
     }
 
@@ -104,34 +108,34 @@
     }
 
     .termos-condicoes > h2 {
-        padding: 16px 0px 16px 16px;
-        font-size: 12px;
+        padding: 1rem 0 1rem 1rem;
+        font-size: 0.75rem;
         font-weight: 700;
         color: $dark;
         font-style: normal;
     }
 
     .termos-condicoes ol {
-        padding: 0px 0px 16px 16px;
+        padding: 0 0 1rem 1rem;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 0.75rem;
         font-style: normal;
         color: $dark;
     }
 
     .termos-condicoes li:nth-child(even) {
-        padding: 16px 0px;
+        padding: 1rem 0;
     }
 
     .termos-condicoes ol span {
-        font-size: 12px;
+        font-size: 0.75rem;
         font-weight: 700;
         font-style: normal;
         color: $dark;
     }
 
     .termos-condicoes ol a {
-        font-size: 12px;
+        font-size: 0.75rem;
         font-weight: 700;
         color: $principal-2;
     }
@@ -146,11 +150,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 700;
         font-style: normal;
         color: $principal-2;
-
     }
 
     .btn-termos {
@@ -160,6 +163,11 @@
     &__cta {
         color: $white;
         font-size: $font-def;
+        transition: opacity 300ms ease-in-out;
+
+        &:hover {
+            opacity: 0.75;
+        }
     }
 
     footer {
@@ -175,19 +183,19 @@
     
         .footer-text {
             margin-top: 28px;
-            font-size: 16px;
+            font-size: 1rem;
             font-weight: 400;
             color: $grey-1;
         }
         .footer-descr {
-            margin: 8px 0;
-            font-size: 16px;
+            margin: 0.5rem 0;
+            font-size: 1rem;
             font-weight: 700;
             color: $principal-2;
         }
     
         .footer-horario {
-            font-size: 16px;
+            font-size: 1rem;
             font-weight: 400;
             color: $grey-1;
         }
@@ -205,11 +213,9 @@
             margin-bottom: 34px;
             width: 90%;
             max-width: 670px;
-            font-size: 12px;
+            font-size: 0.75rem;
             font-weight: 400;
             color: $grey-2;
-        }
+        }   
     }
-
-    
-}
+    */
