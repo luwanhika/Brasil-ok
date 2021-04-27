@@ -59,7 +59,6 @@
 
 
 .termos {
-    border:  1px solid magenta;
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
@@ -156,10 +155,10 @@
             display: none;
         }
     }
+
     @include tablet-desk {
         padding-left: 3.75rem;
         padding-right: 3.75rem;
-
         .container-field h1 {
             margin-top: 20px;
             position: relative;
@@ -212,11 +211,7 @@
                 color: $principal-2;
             }
         }
-        
-
 
     }
-
-      
 
 }
