@@ -62,42 +62,67 @@
                 </div><!--termos-condicoes-->
             </div><!--termos-->
             <div class="definir-termos">
-                <button id="btncontinuar" class="btn-termos header__cta" type="button">Aceitar e continuar ></button>
+                <button data-modal="abrir"  class="btn-termos header__cta" type="button">Aceitar e continuar ></button>
                 <a href="#">Não aceito</a>
              </div>
-           
+             
+             <footer>
+                <div class="footer-contatos">
+                    <div class="footer-sac">
+                        <h2 class="footer-text">SAC</h2>
+                        <p class="footer-descr">0800 776 8000</p>
+                        <p class="footer-horario">Todos os dias, 24h por dia</p>
+                    </div><!--footer-sac-->
+                    <div class="footer-sac">
+                        <h2 class="footer-text">Telefone acessível</h2>
+                        <p class="footer-descr">0800 776 8000</p>
+                        <p class="footer-horario">Todos os dias, 24h por dia</p>
+                    </div><!--footer-sac-->
+                    <div class="footer-sac">
+                        <h2 class="footer-text">Ouvidoria</h2>
+                        <p class="footer-descr">0800 776 8000</p>
+                        <p class="footer-horario">2 a 6 das 9h ás 18h</p>
+                    </div><!--footer-sac-->
+                </div><!--footer-contatos-->
+                <div class="rect"></div>
+                <p class="footer-nota">Banco PAN S.A. (“PAN”), instituição financeira, inscrita sob o CNPJ nº 59.285.411/0001-13, com sede na 
+                    Avenida Paulista, nº 1.374, 16º andar, Bela Vista, São Paulo – SP. Informações adicionais relativas aos produtos de 
+                    crédito oferecidos pelo PAN: Empréstimo consignado - mínimo de 12 parcelas e máximo de 96 parcelas. Valor 
+                    mínimo de R$500,00 de empréstimo. Taxa de juros mínima de 1,20% e taxa máxima de juros de 3,70%. Taxa CET 
+                    mensal mínima de 1,25% e máxima de 4,10%. Exemplo de empréstimo consignado: Empréstimo de R$ 17.529,18 
+                    para pagar em 6 anos (72 meses) - parcelas de R$ 489,59 por mês, com taxa de juros de 2,08% ao mês. Sistema 
+                    de Amortização Price. CET de 29,81% ao ano. Os valores aqui expostos são apenas exemplos, podendo variar de 
+                    acordo com as condições comerciais do produto no momento da contratação.</p>
+            </footer>
         </div><!--container-form-->
+
     </section><!--container-simular-->
 
-    <footer>
-        <div class="footer-contatos">
-            <div class="footer-sac">
-                <h2 class="footer-text">SAC</h2>
-                <p class="footer-descr">0800 776 8000</p>
-                <p class="footer-horario">Todos os dias, 24h por dia</p>
-            </div><!--footer-sac-->
-            <div class="footer-sac">
-                <h2 class="footer-text">Telefone acessível</h2>
-                <p class="footer-descr">0800 776 8000</p>
-                <p class="footer-horario">Todos os dias, 24h por dia</p>
-            </div><!--footer-sac-->
-            <div class="footer-sac">
-                <h2 class="footer-text">Ouvidoria</h2>
-                <p class="footer-descr">0800 776 8000</p>
-                <p class="footer-horario">2 a 6 das 9h ás 18h</p>
-            </div><!--footer-sac-->
-        </div><!--footer-contatos-->
-        <div class="rect"></div>
-        <p class="footer-nota">Banco PAN S.A. (“PAN”), instituição financeira, inscrita sob o CNPJ nº 59.285.411/0001-13, com sede na 
-            Avenida Paulista, nº 1.374, 16º andar, Bela Vista, São Paulo – SP. Informações adicionais relativas aos produtos de 
-            crédito oferecidos pelo PAN: Empréstimo consignado - mínimo de 12 parcelas e máximo de 96 parcelas. Valor 
-            mínimo de R$500,00 de empréstimo. Taxa de juros mínima de 1,20% e taxa máxima de juros de 3,70%. Taxa CET 
-            mensal mínima de 1,25% e máxima de 4,10%. Exemplo de empréstimo consignado: Empréstimo de R$ 17.529,18 
-            para pagar em 6 anos (72 meses) - parcelas de R$ 489,59 por mês, com taxa de juros de 2,08% ao mês. Sistema 
-            de Amortização Price. CET de 29,81% ao ano. Os valores aqui expostos são apenas exemplos, podendo variar de 
-            acordo com as condições comerciais do produto no momento da contratação.</p>
-    </footer>
+    <section class="modal-content" data-mdal="content">
+        <div class="modal">
+            <a href="#" data-mdal="fechar" class="fechar">X</a>
+            <div class="modal-icone">
+                <img src="images/bxs-x-circle.svg.svg" alt="aviso">
+            </div><!--modalicone-->
+            <div class="modal-termos-usos">
+                <h3>Não será possível simular 
+                    o seu empréstimo sem
+                    as permisões
+                </h3>
+    
+                <p>As permissões são importantes 
+                    para que possamos simular o 
+                    valor exato da sua proposta. Isso 
+                    também aumena as chances de 
+                    o seu empréstimo ser aprovado.
+                </p>
+                <button type="submit" class="btn-modal modal-cfm">Quero aceitar os termos</button>
+                <a href="#">Não aceito</a>
+            </div><!--modal-termos-usos-->
+        </div><!--modal-->
+    </section><!--modal-container-->
+    
 
-    <script src="/app/js/script.js"></script>
+    <script type="module" src="./app/js/script.js"></script>
 </body>
 </html>

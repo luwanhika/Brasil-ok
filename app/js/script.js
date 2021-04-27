@@ -1,13 +1,4 @@
-const btnAceitar = document.querySelector('#btncontinuar');
-const header = document.querySelector('.header');
+import initModal from './modules/modal.js';
 
-btnAceitar.addEventListener('click', function(){
-    console.log('click button');
 
-    if(header.classList.contains('open')){
-        header.classList.remove('open');
-    }
-    else {
-        header.classList.add('open');
-    }
-});
+initModal();

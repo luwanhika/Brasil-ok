@@ -16,7 +16,7 @@
 
 // Desktop
 body {
-    
+
     @include tablet-desk {
         .header {
             display: none;
@@ -177,16 +177,17 @@ body {
     }
 
     @include tablet-desk {
+        display: grid;
         footer {
-            border: 1px solid magenta;
-            width: 70%;
+            justify-content: end;
+            width: 100%;
             background: $grey-3;
             box-sizing: border-box;
             margin: 0;
             .footer-contatos {
                 position: relative;
-                width: 80%;
-                margin-left: 140px;
+                width: 90%;
+                margin-left: 85px;
             }
         
             .footer-text {
@@ -209,15 +210,15 @@ body {
             }
         
             .rect {
-                width: 80%;
-                margin: 25px 0px 25px 140px;
+                width: 90%;
+                margin: 25px 0px 25px 85px;
                 max-width: 750px;
                 height: 1px;
                 background: $grey-2;
             }
     
             .footer-nota {
-                margin-left: 140px;
+                margin-left: 85px;
                 margin-bottom: 34px;
                 width: 90%;
                 max-width: 670px;
