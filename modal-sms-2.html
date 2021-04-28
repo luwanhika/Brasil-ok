@@ -53,8 +53,8 @@
             <div class="definir-termos">
                 <button data-sms="abrir" class="btn-termos header__cta" type="button">Já respondi o SMS</button>
                 <div class="btn-recusa">
-                    <a href="#" data-modal="abrir">Não autorizar</a>
-                    <a href="#" data-modal="abrir" class="recusa__sms">Não recebi o SMS</a>
+                    <a href="#" data-autorizar="abrir">Não autorizar</a>
+                    <a href="#" data-reenviar="abrir" class="recusa__sms">Não recebi o SMS</a>
                 </div><!--btn-recusa-->
                 </div>
                 
@@ -89,6 +89,31 @@
         </div><!--container-form-->
 
     </section><!--container-simular-->
+
+    <section class="modal-container" data-reenviar="container">
+        <div class="modal">
+            <a href="#" data-reenviar="fechar" class="fechar">X</a>
+            <div class="modal-icone">
+                <img src="images/bxs-x-circle.svg.svg" alt="aviso">
+            </div><!--modalicone-->
+            <div class="modal-termos-usos">
+                <h3>Não será possível simular 
+                    o seu empréstimo sem
+                    as permisões
+                </h3>
     
+                <p>As permissões são importantes 
+                    para que possamos simular o 
+                    valor exato da sua proposta. Isso 
+                    também aumena as chances de 
+                    o seu empréstimo ser aprovado.
+                </p>
+                <button data-sms="abrir" type="submit" class="btn-modal modal-cfm">Quero aceitar os termos</button>
+                <a href="#" data-modal="abrir">Não aceito</a>
+            </div><!--modal-termos-usos-->
+        </div><!--modal-->
+    </section><!--modal-container-->
+    
+    <script type="module" src="app/js/script.js"></script>
 </body>
 </html>

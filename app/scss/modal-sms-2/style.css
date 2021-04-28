@@ -547,4 +547,194 @@ footer .footer-nota {
     color: #9e9e9e;
   }
 }
+
+body .modal-container {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .modal-container.ativo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .modal {
+  background: white;
+  width: 100%;
+  height: 100%;
+  max-width: 274px;
+  max-height: 399px;
+  padding: 1.6875rem 1rem 1.5rem 1rem;
+  -webkit-box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.15);
+  border-radius: 7px;
+  position: relative;
+}
+
+@-webkit-keyframes modal {
+  from {
+    opacity: 0;
+    -webkit-transform: rotate3d(0, 0, 0);
+            transform: rotate3d(0, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotate3d(0, -30, 0);
+            transform: rotate3d(0, -30, 0);
+  }
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    -webkit-transform: rotate3d(0, 0, 0);
+            transform: rotate3d(0, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotate3d(0, -30, 0);
+            transform: rotate3d(0, -30, 0);
+  }
+}
+
+body .ativo .modal {
+  -webkit-animation: modal .5s forwards;
+          animation: modal .5s forwards;
+}
+
+body .fechar {
+  text-decoration: none;
+  width: 8px;
+  height: 15px;
+  border-radius: 0;
+  top: 10px;
+  right: 20px;
+  background: none;
+  color: black;
+  font-size: 0.75rem;
+  font-weight: normal;
+  position: absolute;
+}
+
+body .modal-icone img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+}
+
+body .modal-termos-usos h3 {
+  display: inline;
+  width: 190px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #5e5e5e;
+  margin-bottom: 32px;
+}
+
+body .modal-termos-usos p {
+  width: 230px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+}
+
+body .btn-modal {
+  margin-bottom: 24px;
+  width: 242px;
+  height: 36px;
+}
+
+body .modal-cfm {
+  color: white;
+  font-size: 1rem;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+  padding: 0.5rem 1.25rem;
+}
+
+body .modal-cfm:hover {
+  opacity: 0.75;
+}
+
+body .modal-termos-usos a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+  font-style: normal;
+  color: #2964ae;
+}
+
+@media screen and (min-width: 769px) {
+  body .modal {
+    border: 1px solid red;
+    background: white;
+    width: 100%;
+    height: 100%;
+    max-width: 462px;
+    max-height: 379px;
+    padding: 1.6875rem 6.125rem 3.625rem 6.125rem;
+    -webkit-box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.15);
+    border-radius: 7px;
+    position: relative;
+  }
+  body .modal-termos-usos h3 {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #5e5e5e;
+    margin-bottom: 16px;
+  }
+  body .modal-termos-usos p {
+    width: 100%;
+    max-width: 234px;
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 46px;
+  }
+  body .btn-modal {
+    margin-bottom: 25px;
+    width: 266px;
+    height: 36px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
