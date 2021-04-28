@@ -192,6 +192,9 @@ button, .button {
     max-width: 474px;
     margin-left: 140px;
   }
+  body .container-simular .container-field h1 {
+    font-style: normal;
+  }
   body .container-simular .container-field h1::after {
     content: '';
     width: 76px;
