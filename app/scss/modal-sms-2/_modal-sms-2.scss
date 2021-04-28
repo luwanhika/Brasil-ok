@@ -11,6 +11,98 @@ body {
         display: none;
         justify-content: center;
         align-items: center;
+
+        .modal {
+            background: $white;
+            width: 100%;
+            height: 100%;
+            max-width: 274px;
+            max-height: 399px;
+            padding: 1.6875rem 1rem 1.5rem 1rem;
+            box-shadow: 0px 8px 32px rgba($color: #000000, $alpha: 0.15);
+            border-radius: 7px;
+            position: relative;
+
+            .fechar {
+                text-decoration: none;
+                width: 8px;
+                height: 15px;
+                border-radius: 0;
+                top: 10px;
+                right: 20px;
+                background: none;
+                color: $dark;
+                font-size: $font-sml;
+                font-weight: normal;
+                position: absolute;
+            }
+
+            .modal-icone img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 27px;
+            }
+
+            .modal-termos-usos h3 {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 190px;
+                text-align: center;
+                align-items: center;
+                font-size: $font-sm;
+                font-weight: 700;
+                color: $grey-1;
+                margin-bottom: 32px;
+            }
+
+            .modal-termos-usos p {
+                width: 230px;
+                font-size: $font-sm;
+                font-weight: 400;
+                text-align: center;
+                align-items: center;
+                margin-bottom: 16px;
+            }
+
+            .modal-termos-usos span {
+                    font-size: $font-sm;
+                    font-weight: 700;
+                    color: $dark;
+            }
+
+            .enviar-numero {
+                font-size: $font-sm;
+                font-weight: 700;
+                color: $grey-1;
+            }
+
+            .btn-modal {
+                margin-bottom: 24px;
+                width: 242px;
+                height: 36px;
+            }
+            .modal-cfm {
+                color: $white;
+                font-size: $font-def;
+                transition: opacity 300ms ease-in-out;
+                padding: 0.5rem 1.25rem;
+                &:hover {
+                    opacity: 0.75;
+                }
+            } 
+                
+            .modal-termos-usos a {
+                display: none;
+                justify-content: center;
+                align-items: center;
+                font-size: 1rem;
+                font-weight: 700;
+                font-style: normal;
+                color: $principal-2;
+            }
+        }
         
     }
 
@@ -20,17 +112,6 @@ body {
 
     
 
-    .modal {
-        background: $white;
-        width: 100%;
-        height: 100%;
-        max-width: 274px;
-        max-height: 399px;
-        padding: 1.6875rem 1rem 1.5rem 1rem;
-        box-shadow: 0px 8px 32px rgba($color: #000000, $alpha: 0.15);
-        border-radius: 7px;
-        position: relative;
-    }
 
     @keyframes modal {
         from {
@@ -47,109 +128,55 @@ body {
         animation: modal .5s forwards;
     }
 
-    .fechar {
-        text-decoration: none;
-        width: 8px;
-        height: 15px;
-        border-radius: 0;
-        top: 10px;
-        right: 20px;
-        background: none;
-        color: $dark;
-        font-size: $font-sml;
-        font-weight: normal;
-        position: absolute;
-    }
-
-    .modal-icone img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 24px;
-    }
+    
+    
 
 
-    .modal-termos-usos h3 {
-        display: inline;
-        width: 190px;
-        text-align: center;
-        align-items: center;
-        font-size: $font-sm;
-        font-weight: 700;
-        color: $grey-1;
-        margin-bottom: 32px;
-    }
-
-    .modal-termos-usos p {
-        width: 230px;
-        font-size: $font-sm;
-        font-weight: 400;
-        text-align: center;
-        align-items: center;
-        margin-bottom: 16px;
-    }
-
-    .btn-modal {
-        margin-bottom: 24px;
-        width: 242px;
-        height: 36px;
-    }
-    .modal-cfm {
-        color: $white;
-        font-size: $font-def;
-        transition: opacity 300ms ease-in-out;
-        padding: 0.5rem 1.25rem;
-        &:hover {
-            opacity: 0.75;
-        }
-    } 
-
-    .modal-termos-usos a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1rem;
-        font-weight: 700;
-        font-style: normal;
-        color: $principal-2;
-    }
-
+    // Desktop
 
     @include tablet-desk {
-        .modal {
-            border: 1px solid red;
-            background: $white;
-            width: 100%;
-            height: 100%;
-            max-width: 462px;
-            max-height: 379px;
-            padding: 1.6875rem 6.125rem 3.625rem 6.125rem;
-            box-shadow: 0px 8px 32px rgba($color: #000000, $alpha: 0.15);
-            border-radius: 7px;
-            position: relative;
-        }
 
-        .modal-termos-usos h3 {
-            width: 100%;
-            max-width: 280px;
-            text-align: center;
-            align-items: center;
-            font-size: $font-sm;
-            font-weight: 700;
-            color: $grey-1;
-            margin-bottom: 16px;
+        .modal-container {
+
+            .modal {
+                border: 1px solid red;
+                background: $white;
+                width: 100%;
+                height: 100%;
+                max-width: 462px;
+                max-height: 379px;
+                padding: 1.6875rem 6.125rem 3.625rem 6.125rem;
+                box-shadow: 0px 8px 32px rgba($color: #000000, $alpha: 0.15);
+                border-radius: 7px;
+                position: relative;
+
+                .modal-termos-usos h3 {
+                    width: 100%;
+                    max-width: 280px;
+                    text-align: center;
+                    align-items: center;
+                    font-size: $font-sm;
+                    font-weight: 700;
+                    color: $grey-1;
+                    margin-bottom: 16px;
+                }
+
+                .modal-termos-usos p {
+                    width: 100%;
+                    max-width: 234px;
+                    font-size: $font-sm;
+                    font-weight: 400;
+                    text-align: center;
+                    align-items: center;
+                    margin-bottom: 46px;
+                }
+
+                .enviar-numero {
+                    display: none;
+                }
+            }
         }
-    
-        .modal-termos-usos p {
-            width: 100%;
-            max-width: 234px;
-            font-size: $font-sm;
-            font-weight: 400;
-            text-align: center;
-            align-items: center;
-            margin-bottom: 46px;
-        }
-    
+       
         .btn-modal {
             margin-bottom: 25px;
             width: 266px;
