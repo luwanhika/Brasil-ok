@@ -285,7 +285,40 @@ button, .button {
   left: 0;
 }
 
-.termos {
+.container-simular .container-form .mensagem-aviso {
+  width: 90%;
+}
+
+.container-simular .container-form .mensagem-aviso .aviso-alerta {
+  color: black;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.container-simular .container-form .mensagem-aviso .aviso-descr {
+  color: black;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-align: justify;
+  margin-bottom: 16px;
+}
+
+.container-simular .container-form .mensagem-aviso .aviso-descr > span {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.container-simular .container-form .mensagem-aviso .aviso-cel {
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #5e5e5e;
+  margin-bottom: 30px;
+}
+
+.container-simular .termos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -306,7 +339,7 @@ button, .button {
   margin-bottom: 32px;
 }
 
-.definir-termos {
+.container-simular .definir-termos {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -318,7 +351,7 @@ button, .button {
   width: 100%;
 }
 
-.definir-termos .btn-termos {
+.container-simular .definir-termos .btn-termos {
   margin-top: 24px;
   color: white;
   font-size: 1rem;
@@ -326,45 +359,30 @@ button, .button {
   transition: opacity 300ms ease-in-out;
 }
 
-.definir-termos .btn-termos:hover {
+.container-simular .definir-termos .btn-termos:hover {
   opacity: 0.75;
 }
 
-.definir-termos a {
+.container-simular .definir-termos .btn-recusa {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.container-simular .definir-termos a {
   padding-top: 1rem;
   font-size: 1rem;
   font-weight: 700;
   font-style: normal;
   color: #2964ae;
-}
-
-.container-form .mensagem-aviso .aviso-alerta {
-  color: black;
-  font-size: 1rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 16px;
-}
-
-.container-form .mensagem-aviso .aviso-descr {
-  color: black;
-  font-size: 0.875rem;
-  font-weight: 400;
-  text-align: justify;
-  margin-bottom: 16px;
-}
-
-.container-form .mensagem-aviso .aviso-descr > span {
-  font-size: 0.875rem;
-  font-weight: 700;
-}
-
-.container-form .mensagem-aviso .aviso-cel {
-  text-align: center;
-  font-size: 0.875rem;
-  font-weight: 700;
-  color: #5e5e5e;
-  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 412px) {
