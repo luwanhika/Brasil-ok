@@ -20,35 +20,6 @@ $breakpoints-down: ("small": "19.9375em", "medium": "47.9375em", "large": "87.43
         @content;
     }
 }*/
-@-webkit-keyframes fade-in {
-  from {
-    display: none;
-    opacity: 0;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-  }
-  to {
-    display: block;
-    opacity: 1;
-  }
-}
-@keyframes fade-in {
-  from {
-    display: none;
-    opacity: 0;
-  }
-  1% {
-    display: block;
-    opacity: 0;
-  }
-  to {
-    display: block;
-    opacity: 1;
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -881,9 +852,9 @@ footer .footer-nota {
   }
 }
 
-.modal-content {
+body .modal-content {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background: rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
@@ -898,14 +869,13 @@ footer .footer-nota {
           align-items: center;
 }
 
-.modal-content .modal-content.ativo {
+body .modal-content.ativo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.modal-content .modal {
-  border: 1px solid magenta;
+body .modal {
   background: white;
   width: 100%;
   height: 100%;
@@ -918,7 +888,7 @@ footer .footer-nota {
   position: relative;
 }
 
-@-webkit-keyframes moadal {
+@-webkit-keyframes modal {
   from {
     opacity: 0;
     -webkit-transform: rotate3d(0, 0, 0);
@@ -931,7 +901,7 @@ footer .footer-nota {
   }
 }
 
-@keyframes moadal {
+@keyframes modal {
   from {
     opacity: 0;
     -webkit-transform: rotate3d(0, 0, 0);
@@ -944,12 +914,12 @@ footer .footer-nota {
   }
 }
 
-.modal-content .ativo .modal {
-  -webkit-animation: modal .3s forwards;
-          animation: modal .3s forwards;
+body .ativo .modal {
+  -webkit-animation: modal .5s forwards;
+          animation: modal .5s forwards;
 }
 
-.modal-content .fechar {
+body .fechar {
   text-decoration: none;
   width: 8px;
   height: 15px;
@@ -963,15 +933,16 @@ footer .footer-nota {
   position: absolute;
 }
 
-.modal-content .modal-icone img {
+body .modal-icone img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 24px;
 }
 
-.modal-content .modal-termos-usos h3 {
-  max-width: 190px;
+body .modal-termos-usos h3 {
+  display: inline;
+  width: 190px;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -979,10 +950,10 @@ footer .footer-nota {
   font-size: 0.875rem;
   font-weight: 700;
   color: #5e5e5e;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
 
-.modal-content .modal-termos-usos p {
+body .modal-termos-usos p {
   width: 230px;
   font-size: 0.875rem;
   font-weight: 400;
@@ -993,13 +964,13 @@ footer .footer-nota {
   margin-bottom: 16px;
 }
 
-.modal-content .btn-modal {
+body .btn-modal {
   margin-bottom: 24px;
   width: 242px;
   height: 36px;
 }
 
-.modal-content .modal-cfm {
+body .modal-cfm {
   color: white;
   font-size: 1rem;
   -webkit-transition: opacity 300ms ease-in-out;
@@ -1007,11 +978,11 @@ footer .footer-nota {
   padding: 0.5rem 1.25rem;
 }
 
-.modal-content .modal-cfm:hover {
+body .modal-cfm:hover {
   opacity: 0.75;
 }
 
-.modal-content .modal-termos-usos a {
+body .modal-termos-usos a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1025,5 +996,49 @@ footer .footer-nota {
   font-weight: 700;
   font-style: normal;
   color: #2964ae;
+}
+
+@media screen and (min-width: 769px) {
+  body .modal {
+    border: 1px solid red;
+    background: white;
+    width: 100%;
+    height: 100%;
+    max-width: 462px;
+    max-height: 379px;
+    padding: 1.6875rem 6.125rem 3.625rem 6.125rem;
+    -webkit-box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.15);
+    border-radius: 7px;
+    position: relative;
+  }
+  body .modal-termos-usos h3 {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #5e5e5e;
+    margin-bottom: 16px;
+  }
+  body .modal-termos-usos p {
+    width: 100%;
+    max-width: 234px;
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 46px;
+  }
+  body .btn-modal {
+    margin-bottom: 25px;
+    width: 266px;
+    height: 36px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="app/scss/style.scss">
-    <link rel="stylesheet" href="app/scss/style.css">
-    <link rel="stylesheet" href="app/scss/style.css.map">
-    <title>Brasil OK</title>
+    <link rel="stylesheet" href="app/scss/confirmacao-sms/style.scss">
+    <link rel="stylesheet" href="app/scss/confirmacao-sms/style.css">
+    <link rel="stylesheet" href="app/scss/confirmacao-sms/style.css.map">
+    <title>onfirmacao SMS</title>
 </head>
 <body>
     
@@ -32,38 +32,30 @@
             </div><!--image__brasil-->
         </div><!--side-bar-->
         <div class="container-form">
+             
             <div class="container-field">
-                <h1>Simule seu empréstimo com taxas 
-                a partir de 1,65%</h1>
-                <div class="input-field">
-                    <label for="number">CPF</label>
-                    <input type="text" for="number" id="cpf" placeholder="Ex.: 123.456.789-12">
-                </div><!--input-field-->
-                <div class="input-field">
-                    <label for="number">Celuar</label>
-                    <input type="text" for="number" id="celular" placeholder="Ex.: (11) 956 347-789">
-                </div><!--input-field-->
-                <div class="input-field">
-                    <label for="email">Email</label>
-                    <input type="text" for="email" id="email" placeholder="Ex.: joao@email.com">
-                </div><!--input-field-->
+                <h1></h1>
             </div><!--containe-field-->
             <div class="termos">
-                <div class="termos-condicoes">
-                    <h2>Aceitando os termos a seguir, a sua simulação será mais exata:</h2>
-                    <ol>
-                        <li><span>Autorizo</span> o Brasil OK a informar e consultar os meus dados pessoais 
-                            ao sistema de informação de crédito (SCR), do Banco Central do Brasil 
-                            (BACEN), conforme disposto na resolução CMN n° 4.571 de 26 de Maio
-                            de 2017.</li>
-                        <li><span>Aceito</span> os <a href="#">Termos de Uso</a> e <a href="#">Politicas de Privacidade</a></li>
-                        <li><span>Aceito</span> receber contato sobre empréstimo consignado via <span> <img src="images/bxl-whatsapp.svg.svg" alt="Whatsapp"> Whatsapp</span> ou outro meio de contato.</li>
-                    </ol>
-                </div><!--termos-condicoes-->
+                <div class="menssagens">
+                    <img src="images/Mensagem.png" alt="mensagem">
+                </div><!--mensagem-->
             </div><!--termos-->
+            <div class="mensagem-aviso">
+                <h2 class="aviso-alerta">Te enviamos uma SMS</h2>
+                <p class="aviso-descr">Precisamos consultar seu INSS para uma 
+                    simulação exata. Responda <span>“SIM” </span> 
+                    <span>gratuitamente</span> no SMS que enviamos ao
+                    número:
+                </p><!--aviso-descr-->
+                <p class="aviso-cel">(11) 956 346-645</p>
+            </div><!--mensagem-aviso-->
             <div class="definir-termos">
-                <button data-modal="abrir"  class="btn-termos header__cta" type="button">Aceitar e continuar ></button>
-                <a href="#">Não aceito</a>
+                <button data-sms="abrir" class="btn-termos header__cta" type="button">Já respondi o SMS</button>
+                <div class="btn-recusa">
+                    <a href="#" data-modal="abrir">Não aceito</a>
+                    <a href="#" data-modal="abrir" class="recusa__sms">Não recebi o SMS</a>
+                </div><!--btn-recusa-->
              </div>
              
              <footer>
@@ -98,31 +90,5 @@
 
     </section><!--container-simular-->
 
-    <section class="modal-content" data-mdal="content">
-        <div class="modal">
-            <a href="#" data-mdal="fechar" class="fechar">X</a>
-            <div class="modal-icone">
-                <img src="images/bxs-x-circle.svg.svg" alt="aviso">
-            </div><!--modalicone-->
-            <div class="modal-termos-usos">
-                <h3>Não será possível simular 
-                    o seu empréstimo sem
-                    as permisões
-                </h3>
-    
-                <p>As permissões são importantes 
-                    para que possamos simular o 
-                    valor exato da sua proposta. Isso 
-                    também aumena as chances de 
-                    o seu empréstimo ser aprovado.
-                </p>
-                <button type="submit" class="btn-modal modal-cfm">Quero aceitar os termos</button>
-                <a href="#">Não aceito</a>
-            </div><!--modal-termos-usos-->
-        </div><!--modal-->
-    </section><!--modal-container-->
-    
-
-    <script type="module" src="./app/js/script.js"></script>
 </body>
 </html>
