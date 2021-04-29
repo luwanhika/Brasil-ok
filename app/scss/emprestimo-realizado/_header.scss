@@ -51,7 +51,7 @@ body {
                 .termos {
                     display: flex;
                     width: 100%;
-                    max-width: 525px;
+                    max-width: 401px;
                     height: 380px;
                     margin-top: 16px;
                     background: $white;
@@ -61,30 +61,52 @@ body {
                     align-items: center;
                     margin-left: auto;
                     margin-right: auto;
-                    margin-bottom: 32px;
+                    margin-bottom: 200px;
 
-                    .mensagem-img {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                    .mensagens {
+                        width: 70%;
+                        .mensagem-img {
+                            display: flex;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            margin-top: 43px;
+
+                            h3 {
+                                font-size: $font-sml;
+                                font-weight: 700;
+                            }
+                        }
                     }
                 }
 
                 
                 .container-field {
+                    border: 1px solid magenta;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     width: 100%;
-                    max-width: 525px;
+                    max-width: 401px;
                     margin-left: auto;
                     margin-right: auto;
                 }
     
                 .container-field h1 {
+                    border: 1px solid magenta;
+                    display: inline;
+                    position: relative;
+                    max-width: 246px;
                     font-size: $font-def;
-                    font-style: normal;
+                    font-weight: 400;
+                    padding-top: 100px;
+                    margin-left: auto;
+                    margin-right: auto;
                     color: $dark;
+
+                    span {
+                        font-size: $font-def;
+                        font-weight: 700;
+                    }
                 }
     
                 .container-field h1::after {
@@ -100,30 +122,26 @@ body {
 
 
                 .definir-termos {
-                    display: grid;
-                    margin-left: auto;
-                    margin-right: auto;
-                    grid-template-columns: 1fr;
-                    align-items: center;
-                    justify-items: center;
                     width: 100%;
-                    max-width: 478px;
-                    margin-top: 70px;
+                    margin-top: 40px;
 
+                    .btn-termos {
+                        padding: 8px 48px;
+                        margin: 0px;
+                        width: 177px;
+                        height: 36px;
+                        color: $white;
+                        font-size: $font-def;
+                        font-weight: 700;
+                        transition: opacity 200ms ease-in-out;
+                
+                        &:hover {
+                            opacity: 0.75;
+                        }
+                    }
                     
                 }
-                .btn-termos {
-                    padding: .5rem 2rem;
-                    margin-left: 50px;
-                    color: $white;
-                    font-size: $font-def;
-                    font-weight: 700;
-                    transition: opacity 300ms ease-in-out;
-            
-                    &:hover {
-                        opacity: 0.75;
-                    }
-                }
+                
             }
 
             
