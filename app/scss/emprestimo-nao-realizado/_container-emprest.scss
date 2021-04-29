@@ -1,0 +1,68 @@
+// mobile
+.container-simular {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    
+    .side-bar {
+        @include tablet {
+            display: none;
+        }
+    }
+
+    .container-field h1 {
+        position: relative;
+    }
+
+    .container-field h1::after {
+        content: '';
+        width: 29px;
+        height: 4px;
+        background: $principal-1;
+        position: absolute;
+        border-radius: 4px;
+        top: 0;
+        left: 0;
+    }  
+
+    .container-form {
+        
+        
+    }
+
+    .termos {
+        display: flex;
+        width: 100%;
+        max-width: 264px;
+        height: 305px;
+        margin-top: 16px;
+        background: $grey-3;
+        border-radius: 8px;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 32px;
+    }
+    
+    .definir-termos {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+    
+    
+        .btn-termos {
+            margin-top: 24px;
+            color: $white;
+            font-size: $font-def;
+            transition: opacity 300ms ease-in-out;
+    
+            &:hover {
+                opacity: 0.75;
+            }
+
+        }
+       
+    }
+}   
