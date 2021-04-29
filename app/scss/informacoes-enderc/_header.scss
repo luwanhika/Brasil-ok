@@ -12,3 +12,188 @@
     }
     
 }
+
+
+// Desktop
+// Desktop
+body {
+
+    @include tablet-desk {
+        .header {
+            display: none;
+        }
+        .container-simular {
+            display: flex;
+            padding-left: 0;
+            padding-right: 0;
+            .side-bar {
+                width: 30%;
+                min-height: 100%;
+                background-image: url(/images/background-brasil.png);
+                background-position: center center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .campos {
+                display: flex;
+            }
+
+            
+        
+            .side-bar {
+                .image__brasil {
+                    padding-top: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+
+            .container-form {
+                width: 70%;
+            }
+        
+            .container-field {
+                width: 100%;
+                max-width: 474px;
+                margin-left: 140px;
+            }
+        
+            .container-field h1 {
+                position: relative;
+                font-size: 1.5rem;
+                padding-top: 1.5rem;
+                font-style: normal;
+                font-weight: 700;
+                color: $grey-1;
+            }
+        
+            .container-field h1::after {
+                content: '';
+                width: 76px;
+                height: 4px;
+                background: $principal-1;
+                position: absolute;
+                border-radius: 4px;
+                top: 0px;
+                left: 0;
+            }
+        
+            .input-field label {
+                display: block;
+            }
+        
+            .input-field label {
+                padding-bottom: 0.5rem;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 0.75rem;
+                color: $dark;
+            }
+        
+            .input-field input:nth-child(1n+2) {
+                margin-bottom: 1rem;
+            }
+        
+            .input-field input {
+                outline: none;
+                width: 474px;
+                height: 47px;
+                border: 1px solid $grey-2;
+                border-radius: 4px;
+                font-size: 0.75rem;
+                padding: 1rem 0 1rem 1rem;
+                color: $grey-2;
+            }
+        
+            .definir-termos {
+                max-width: 478px;
+                margin: 24px 0 0 140px;
+                margin-bottom: 100px;
+            }
+        
+            .definir-termos a {
+                display: none;
+                justify-content: center;
+                align-items: center;
+                font-size: 1rem;
+                font-weight: 700;
+                font-style: normal;
+                color: $principal-2;
+            }
+        
+            .btn-termos {
+                margin-right: 56px;
+            }
+        
+            &__cta {
+                color: $white;
+                font-size: $font-def;
+                transition: opacity 300ms ease-in-out;
+        
+                &:hover {
+                    opacity: 0.75;
+                }
+            }        
+    
+        }
+
+    }
+
+    // footer
+      // footer
+      @include tablet-desk {
+        display: grid;
+        footer {
+            justify-content: end;
+            width: 100%;
+            background: $grey-3;
+            box-sizing: border-box;
+            margin: 0;
+            .footer-contatos {
+                position: relative;
+                width: 90%;
+                margin-left: 85px;
+            }
+        
+            .footer-text {
+                margin-top: 28px;
+                font-size: 1rem;
+                font-weight: 400;
+                color: $grey-1;
+            }
+            .footer-descr {
+                margin: 0.5rem 0;
+                font-size: 1rem;
+                font-weight: 700;
+                color: $principal-2;
+            }
+        
+            .footer-horario {
+                font-size: 1rem;
+                font-weight: 400;
+                color: $grey-1;
+            }
+        
+            .rect {
+                width: 90%;
+                margin: 25px 0px 25px 85px;
+                max-width: 750px;
+                height: 1px;
+                background: $grey-2;
+            }
+    
+            .footer-nota {
+                margin-left: 85px;
+                margin-bottom: 34px;
+                width: 90%;
+                max-width: 670px;
+                font-size: 0.75rem;
+                font-weight: 400;
+                color: $grey-2;
+            }   
+        }
+    }
+}
