@@ -101,7 +101,7 @@ button, .button {
     max-width: 525px;
     height: 380px;
     margin-top: 16px;
-    background: white;
+    background: #ffffff;
     -webkit-box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.15);
             box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.15);
     border-radius: 8px;
@@ -144,7 +144,7 @@ button, .button {
   body .container-simular .container-form .container-field h1 {
     font-size: 1rem;
     font-style: normal;
-    color: black;
+    color: #000000;
   }
   body .container-simular .container-form .container-field h1::after {
     content: '';
@@ -174,7 +174,7 @@ button, .button {
   body .container-simular .container-form .btn-termos {
     padding: .5rem 2rem;
     margin-left: 50px;
-    color: white;
+    color: #ffffff;
     font-size: 1rem;
     font-weight: 700;
     -webkit-transition: opacity 300ms ease-in-out;
@@ -204,7 +204,7 @@ button, .button {
   margin-bottom: 54px;
   font-size: 1rem;
   font-weight: 700;
-  color: black;
+  color: #000000;
   text-align: center;
 }
 
@@ -227,7 +227,7 @@ button, .button {
   max-width: 264px;
   height: 305px;
   margin-top: 16px;
-  background: white;
+  background: #ffffff;
   border-radius: 8px;
   -webkit-box-shadow: 0px 4px 16px rgba(40, 100, 173, 0.15);
           box-shadow: 0px 4px 16px rgba(40, 100, 173, 0.15);
@@ -261,7 +261,7 @@ button, .button {
 
 .container-simular .definir-termos .btn-termos {
   margin-top: 42px;
-  color: white;
+  color: #ffffff;
   font-size: 1rem;
   -webkit-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
@@ -312,7 +312,7 @@ button, .button {
     max-width: 480px;
     height: 370px;
     margin-top: 16px;
-    background: white;
+    background: #ffffff;
     border-radius: 8px;
     -webkit-box-shadow: 0px 4px 16px rgba(40, 100, 173, 0.15);
             box-shadow: 0px 4px 16px rgba(40, 100, 173, 0.15);
@@ -347,7 +347,7 @@ button, .button {
 .container-simular .definir-termos .btn-termos {
   margin-top: 24px;
   margin-right: 56px;
-  color: white;
+  color: #ffffff;
   font-size: 1rem;
   -webkit-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
