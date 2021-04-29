@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="app/scss/dados-pessoais/style.scss">
-    <link rel="stylesheet" href="app/scss/dados-pessoais/style.css">
-    <link rel="stylesheet" href="app/scss/dados-pessoais/style.css.map">
-    <title>Dados Pessoais</title>
+    <link rel="stylesheet" href="app/scss/informacoes-enderc/style.scss">
+    <link rel="stylesheet" href="app/scss/informacoes-enderc/style.css">
+    <link rel="stylesheet" href="app/scss/informacoes-enderc/style.css.map">
+    <title>informacões de endereço</title>
 </head>
 <body>
-    
+
     <section class="header"> 
         <div class="logo-mob">
             <a href="#" class="header__logo">
@@ -21,6 +19,7 @@
         </div><!--logo-mob-->
     </section><!--header-->
 
+    
     <!-- Hero Section -->
     <section class="container-simular">
         <div class="side-bar">
@@ -32,34 +31,38 @@
         </div><!--side-bar-->
         <div class="container-form">
             <div class="container-field">
-                <h1>Simule seu empréstimo com taxas 
-                a partir de 1,65%</h1>
+                <h1>Informe seu endereço</h1>
                 <div class="input-field">
-                    <label for="number">CPF</label>
+                    <label for="number">CEP</label>
+                    <input type="number" for="number" id="cep" placeholder="Ex.: 123.456.789-12">
+                    <a class="container-cep" href="#">Não sei meu CEP</a>
+                </div><!--input-field-->
+                <div class="input-field">
+                    <label for="text">endereço</label>
+                    <input type="text" for="number" id="celular" placeholder="Ex.: Brás albanese">
+                </div><!--input-field-->
+                <div class="input-field">
+                    <label for="number">Número</label>
+                    <input type="number" for="email" id="email" placeholder="Ex.: 785">
+                </div><!--input-field-->
+                <div class="input-field">
+                    <label for="text">Bairro</label>
                     <input type="text" for="number" id="cpf" placeholder="Ex.: 123.456.789-12">
                 </div><!--input-field-->
                 <div class="input-field">
-                    <label for="number">Celuar</label>
-                    <input type="text" for="number" id="celular" placeholder="Ex.: (11) 956 347-789">
+                    <label for="text">Cidade</label>
+                    <input type="text" for="number" id="celular" placeholder="Ex.: Brás albanese">
                 </div><!--input-field-->
                 <div class="input-field">
-                    <label for="email">Email</label>
-                    <input type="text" for="email" id="email" placeholder="Ex.: joao@email.com">
+                    <label for="text">Estado</label>
+                    <input type="text" for="email" id="email" placeholder="Ex.: 785">
+                </div><!--input-field-->
+                <div class="input-field">
+                    <label for="text">Complemento</label>
+                    <input type="text" for="email" id="email" placeholder="Ex.: 785">
                 </div><!--input-field-->
             </div><!--containe-field-->
-            <div class="termos">
-                <div class="termos-condicoes">
-                    <h2>Aceitando os termos a seguir, a sua simulação será mais exata:</h2>
-                    <ol>
-                        <li><span>Autorizo</span> o Brasil OK a informar e consultar os meus dados pessoais 
-                            ao sistema de informação de crédito (SCR), do Banco Central do Brasil 
-                            (BACEN), conforme disposto na resolução CMN n° 4.571 de 26 de Maio
-                            de 2017.</li>
-                        <li><span>Aceito</span> os <a href="#">Termos de Uso</a> e <a href="#">Politicas de Privacidade</a></li>
-                        <li><span>Aceito</span> receber contato sobre empréstimo consignado via <span> <img src="images/bxl-whatsapp.svg.svg" alt="Whatsapp"> Whatsapp</span> ou outro meio de contato.</li>
-                    </ol>
-                </div><!--termos-condicoes-->
-            </div><!--termos-->
+           
             <div class="definir-termos">
                 <button data-sms="abrir" class="btn-termos header__cta" type="button">Aceitar e continuar ></button>
                 <a href="#" data-modal="abrir">Não aceito</a>
@@ -96,32 +99,6 @@
         </div><!--container-form-->
 
     </section><!--container-simular-->
-
-    <section class="modal-content" data-modal="content">
-        <div class="modal">
-            <a href="#" data-modal="fechar" class="fechar">X</a>
-            <div class="modal-icone">
-                <img src="images/bxs-x-circle.svg.svg" alt="aviso">
-            </div><!--modalicone-->
-            <div class="modal-termos-usos">
-                <h3>Não será possível simular 
-                    o seu empréstimo sem
-                    as permisões
-                </h3>
     
-                <p>As permissões são importantes 
-                    para que possamos simular o 
-                    valor exato da sua proposta. Isso 
-                    também aumena as chances de 
-                    o seu empréstimo ser aprovado.
-                </p>
-                <button data-sms="abrir" type="submit" class="btn-modal modal-cfm">Quero aceitar os termos</button>
-                <a href="#" data-modal="abrir">Não aceito</a>
-            </div><!--modal-termos-usos-->
-        </div><!--modal-->
-    </section><!--modal-container-->
-    
-
-    <script type="module" src="./app/js/script.js"></script>
 </body>
 </html>

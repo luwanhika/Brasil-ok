@@ -1,0 +1,14 @@
+.header {
+    padding: 1.25rem calc(100vw - 1200px);
+    z-index: 10;
+    position: relative;
+
+    &__logo {
+        margin-left: 20px;
+
+        @include mobile {
+            display: none;
+        }
+    }
+    
+}
