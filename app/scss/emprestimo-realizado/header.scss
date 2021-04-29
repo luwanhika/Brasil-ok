@@ -5,7 +5,6 @@
 
     &__logo {
         margin-left: 20px;
-
         @include mobile {
             display: none;
         }
@@ -27,16 +26,14 @@ body {
             padding-left: 0;
             padding-right: 0;
 
+
             .side-bar {
                 width: 30%;
-                min-height: 100%;
+                max-height: 100%;
                 background-image: url(/images/background-brasil.png);
                 background-position: center center;
                 background-size: cover;
                 background-repeat: no-repeat;
-            }
-
-            .side-bar {
                 .image__brasil {
                     padding-top: 40px;
                     display: flex;
