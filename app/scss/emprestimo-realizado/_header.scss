@@ -12,3 +12,120 @@
     }
     
 }
+
+
+// Desktop
+body {
+
+    @include tablet-desk {
+        .header {
+            display: none;
+        }
+
+        .container-simular {
+            display: flex;
+            padding-left: 0;
+            padding-right: 0;
+
+            .side-bar {
+                width: 30%;
+                min-height: 100%;
+                background-image: url(/images/background-brasil.png);
+                background-position: center center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .side-bar {
+                .image__brasil {
+                    padding-top: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+
+            .container-form {
+                width: 70%;
+                .termos {
+                    display: flex;
+                    width: 100%;
+                    max-width: 525px;
+                    height: 380px;
+                    margin-top: 16px;
+                    background: $white;
+                    box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.15);
+                    border-radius: 8px;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 32px;
+
+                    .mensagem-img {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+
+                
+                .container-field {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    max-width: 525px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+    
+                .container-field h1 {
+                    font-size: $font-def;
+                    font-style: normal;
+                    color: $dark;
+                }
+    
+                .container-field h1::after {
+                    content: '';
+                    max-width: 76px;
+                    height: 4px;
+                    background: $principal-1;
+                    position: absolute;
+                    border-radius: 4px;
+                    top: 0px;
+                    left: 0;
+                }
+
+
+                .definir-termos {
+                    display: grid;
+                    margin-left: auto;
+                    margin-right: auto;
+                    grid-template-columns: 1fr;
+                    align-items: center;
+                    justify-items: center;
+                    width: 100%;
+                    max-width: 478px;
+                    margin-top: 70px;
+
+                    
+                }
+                .btn-termos {
+                    padding: .5rem 2rem;
+                    margin-left: 50px;
+                    color: $white;
+                    font-size: $font-def;
+                    font-weight: 700;
+                    transition: opacity 300ms ease-in-out;
+            
+                    &:hover {
+                        opacity: 0.75;
+                    }
+                }
+            }
+
+            
+        }
+}   }
