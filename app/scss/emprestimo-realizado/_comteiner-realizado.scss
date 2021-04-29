@@ -11,14 +11,19 @@
 
     .container-field h1 {
         position: relative;
-        max-width: 181px;
+        max-width: 246px;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 54px;
+        margin-bottom: 34px;
         font-size: $font-def;
-        font-weight: 700;
+        font-weight: 400;
         color: $dark;
         text-align: center;
+
+        span {
+            font-size: $font-def;
+            font-weight: 700;
+        }
     }
 
     .container-field h1::after {
@@ -35,24 +40,58 @@
     
 
     .termos {
+        border: 1px solid magenta;
         display: flex;
         width: 100%;
-        max-width: 264px;
-        height: 305px;
+        max-width: 246px;
+        height: 380px;
         margin-top: 16px;
         background: $white;
         border-radius: 8px;
         box-shadow: 0px 4px 16px rgba(40, 100, 173, 0.15);
         justify-content: center;
-        align-items: center;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 32px;
 
         .mensagens {
-        
-            margin-left: auto;
-            margin-right: auto;
+            border: 1px solid magenta;
+            width: 90%;
+            margin: 0 auto;
+
+            .mensagem-img {
+                display: flex;
+                margin-top: 43px;
+                margin-bottom: 45px;
+                h3 {
+                    font-size: $font-sml;
+                    font-weight: 700;
+                    margin-right: auto;
+            }   }
+
+            .termos-emprestimo {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 16px;
+                color: $dark;
+
+                #receber {
+                    font-size: $font-sml;
+                    font-weight: 400;
+                }
+
+                .valor {
+                    font-size: $font-sml;
+                    font-weight: 700;
+                }
+            }
+
+            .termos-parcelas {
+                display: flex;
+                justify-content: space-between;
+                font-size: $font-sml;
+                font-weight: 400;
+            }
         
         }
     }

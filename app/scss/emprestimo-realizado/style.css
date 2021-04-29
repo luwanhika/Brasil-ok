@@ -198,14 +198,19 @@ button, .button {
 
 .container-simular .container-field h1 {
   position: relative;
-  max-width: 181px;
+  max-width: 246px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 54px;
+  margin-bottom: 34px;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 400;
   color: black;
   text-align: center;
+}
+
+.container-simular .container-field h1 span {
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 .container-simular .container-field h1::after {
@@ -220,12 +225,13 @@ button, .button {
 }
 
 .container-simular .termos {
+  border: 1px solid magenta;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  max-width: 264px;
-  height: 305px;
+  max-width: 246px;
+  height: 380px;
   margin-top: 16px;
   background: white;
   border-radius: 8px;
@@ -234,17 +240,61 @@ button, .button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 32px;
 }
 
 .container-simular .termos .mensagens {
-  margin-left: auto;
+  border: 1px solid magenta;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container-simular .termos .mensagens .mensagem-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 43px;
+  margin-bottom: 45px;
+}
+
+.container-simular .termos .mensagens .mensagem-img h3 {
+  font-size: 0.75rem;
+  font-weight: 700;
   margin-right: auto;
+}
+
+.container-simular .termos .mensagens .termos-emprestimo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 16px;
+  color: black;
+}
+
+.container-simular .termos .mensagens .termos-emprestimo #receber {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.container-simular .termos .mensagens .termos-emprestimo .valor {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.container-simular .termos .mensagens .termos-parcelas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 0.75rem;
+  font-weight: 400;
 }
 
 .container-simular .definir-termos {
