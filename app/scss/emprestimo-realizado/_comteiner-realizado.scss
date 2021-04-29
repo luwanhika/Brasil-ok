@@ -1,9 +1,10 @@
 // mobile
 .container-simular {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    
     
     .side-bar {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
         @include tablet {
             display: none;
         }
@@ -19,6 +20,7 @@
         font-weight: 400;
         color: $dark;
         text-align: center;
+        padding-top: 32px;
 
         span {
             font-size: $font-def;

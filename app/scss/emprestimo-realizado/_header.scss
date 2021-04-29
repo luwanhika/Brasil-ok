@@ -78,7 +78,6 @@ body {
 
                 
                 .container-field {
-                    border: 1px solid magenta;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -89,15 +88,14 @@ body {
                 }
     
                 .container-field h1 {
-                    border: 1px solid magenta;
-                    display: inline;
                     position: relative;
-                    max-width: 246px;
-                    font-size: $font-def;
-                    font-weight: 400;
-                    padding-top: 100px;
+                    max-width: 401px;
                     margin-left: auto;
                     margin-right: auto;
+                    font-size: $font-def;
+                    text-align: center;
+                    font-weight: 400;
+                    padding-top: 100px;
                     color: $dark;
 
                     span {
