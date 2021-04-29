@@ -59,6 +59,132 @@ button, .button {
   }
 }
 
+@media screen and (min-width: 769px) {
+  body .header {
+    display: none;
+  }
+  body .container-simular {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  body .container-simular .side-bar {
+    width: 30%;
+    min-height: 100%;
+    background-image: url(/images/background-brasil.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  body .container-simular .side-bar .image__brasil {
+    padding-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .container-simular .container-form {
+    width: 70%;
+  }
+  body .container-simular .container-form .termos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    max-width: 525px;
+    height: 380px;
+    margin-top: 16px;
+    background: white;
+    -webkit-box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+  }
+  body .container-simular .container-form .termos .mensagem-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .container-simular .container-form .container-field {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    max-width: 525px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body .container-simular .container-form .container-field h1 {
+    font-size: 1rem;
+    font-style: normal;
+    color: black;
+  }
+  body .container-simular .container-form .container-field h1::after {
+    content: '';
+    max-width: 76px;
+    height: 4px;
+    background: #45ad43;
+    position: absolute;
+    border-radius: 4px;
+    top: 0px;
+    left: 0;
+  }
+  body .container-simular .container-form .definir-termos {
+    display: -ms-grid;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    width: 100%;
+    max-width: 478px;
+    margin-top: 70px;
+  }
+  body .container-simular .container-form .btn-termos {
+    padding: .5rem 2rem;
+    margin-left: 50px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    -webkit-transition: opacity 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out;
+  }
+  body .container-simular .container-form .btn-termos:hover {
+    opacity: 0.75;
+  }
+}
+
 .container-simular {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -204,17 +330,31 @@ button, .button {
     margin-left: auto;
     margin-right: auto;
   }
-  .container-simular .btn-termos {
-    margin-top: 24px;
-    margin-right: 56px;
-    color: white;
-    font-size: 1rem;
-    -webkit-transition: opacity 300ms ease-in-out;
-    transition: opacity 300ms ease-in-out;
-  }
-  .container-simular .btn-termos:hover {
-    opacity: 0.75;
-  }
+}
+
+.container-simular .definir-termos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  width: 100%;
+}
+
+.container-simular .definir-termos .btn-termos {
+  margin-top: 24px;
+  margin-right: 56px;
+  color: white;
+  font-size: 1rem;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+.container-simular .definir-termos .btn-termos:hover {
+  opacity: 0.75;
 }
 
 footer {
