@@ -4,10 +4,12 @@
     padding-right: 1.25rem;
     
     .side-bar {
+        
         @include tablet {
             display: none;
         }
     }
+    
 
     .container-field h1 {
         position: relative;

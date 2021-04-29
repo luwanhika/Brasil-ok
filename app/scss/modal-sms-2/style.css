@@ -123,9 +123,9 @@ button, .button {
   body .container-simular .container-form .aviso-descr {
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
+    text-align: justify;
     width: 100%;
-    max-width: 403px;
+    max-width: 400px;
     color: black;
     font-size: 0.875rem;
     font-weight: 400;
@@ -275,6 +275,7 @@ button, .button {
 
 .container-simular .container-field h1 {
   position: relative;
+  padding-top: 32px;
 }
 
 .container-simular .container-field h1::after {
@@ -289,6 +290,8 @@ button, .button {
 }
 
 .container-simular .container-form .mensagem-aviso {
+  margin-left: auto;
+  margin-right: auto;
   width: 90%;
 }
 

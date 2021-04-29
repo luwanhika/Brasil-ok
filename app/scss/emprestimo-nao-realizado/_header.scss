@@ -60,7 +60,7 @@ body {
                     align-items: center;
                     margin-left: auto;
                     margin-right: auto;
-                    margin-bottom: 32px;
+                    margin-bottom: 200px;
 
                     .mensagem-img {
                         display: flex;
@@ -81,9 +81,11 @@ body {
                 }
     
                 .container-field h1 {
+                    max-width: 525px;
                     font-size: $font-def;
                     font-style: normal;
                     color: $dark;
+                    padding-top: 40px;
                 }
     
                 .container-field h1::after {

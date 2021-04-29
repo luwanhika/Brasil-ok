@@ -1,9 +1,10 @@
 // mobile
 .container-simular {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+    
     
     .side-bar {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
         @include tablet {
             display: none;
         }
@@ -19,6 +20,7 @@
         font-weight: 700;
         color: $dark;
         text-align: center;
+        padding-top: 32px;
     }
 
     .container-field h1::after {
@@ -50,23 +52,31 @@
         margin-bottom: 32px;
 
         .mensagens {
-        
-            margin-left: auto;
-            margin-right: auto;
-        
+            width: 90%;
+            margin: 0 auto;
+
+            .mensagem-img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
         }
     }
     
     .definir-termos {
         display: grid;
+        margin-left: auto;
+        margin-right: auto;
         grid-template-columns: 1fr;
         align-items: center;
         justify-items: center;
         width: 100%;
-    
+        margin-top: 40px;
     
         .btn-termos {
-            margin-top: 42px;
+            padding: 8px 32px;
+            width: 228px;
+            height: 36px;
             color: $white;
             font-size: $font-def;
             transition: opacity 300ms ease-in-out;

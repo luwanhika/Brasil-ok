@@ -113,7 +113,7 @@ button, .button {
             align-items: center;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 32px;
+    margin-bottom: 200px;
   }
   body .container-simular .container-form .termos .mensagem-img {
     display: -webkit-box;
@@ -142,9 +142,11 @@ button, .button {
     margin-right: auto;
   }
   body .container-simular .container-form .container-field h1 {
+    max-width: 525px;
     font-size: 1rem;
     font-style: normal;
     color: black;
+    padding-top: 40px;
   }
   body .container-simular .container-form .container-field h1::after {
     content: '';
@@ -185,7 +187,7 @@ button, .button {
   }
 }
 
-.container-simular {
+.container-simular .side-bar {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
@@ -206,6 +208,7 @@ button, .button {
   font-weight: 700;
   color: black;
   text-align: center;
+  padding-top: 32px;
 }
 
 .container-simular .container-field h1::after {
@@ -243,13 +246,27 @@ button, .button {
 }
 
 .container-simular .termos .mensagens {
-  margin-left: auto;
-  margin-right: auto;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container-simular .termos .mensagens .mensagem-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container-simular .definir-termos {
   display: -ms-grid;
   display: grid;
+  margin-left: auto;
+  margin-right: auto;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   -webkit-box-align: center;
@@ -257,10 +274,13 @@ button, .button {
           align-items: center;
   justify-items: center;
   width: 100%;
+  margin-top: 40px;
 }
 
 .container-simular .definir-termos .btn-termos {
-  margin-top: 42px;
+  padding: 8px 32px;
+  width: 228px;
+  height: 36px;
   color: white;
   font-size: 1rem;
   -webkit-transition: opacity 300ms ease-in-out;
