@@ -161,6 +161,11 @@ body {
         
             .btn-termos {
                 margin-right: 56px;
+                padding: 8px 24px 8px 32px;
+
+                span {
+                    padding-right: 8px;
+                }
             }
         
             &__cta {
