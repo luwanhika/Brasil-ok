@@ -79,7 +79,7 @@ button, .button {
   body .container-simular .side-bar {
     width: 30%;
     min-height: 100%;
-    background-image: url(/images/background-brasil.png);
+    background-image: url(../../../images/background-brasil.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -88,6 +88,10 @@ button, .button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 16px;
+  }
+  body .container-simular .campos .campo-first {
+    margin-right: 16px;
   }
   body .container-simular .side-bar .image__brasil {
     padding-top: 40px;
@@ -108,6 +112,19 @@ button, .button {
     width: 100%;
     max-width: 474px;
     margin-left: 140px;
+  }
+  body .container-simular .container-field .input-field .container-cep {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: -15px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: black;
   }
   body .container-simular .container-field h1 {
     position: relative;
@@ -142,7 +159,7 @@ button, .button {
   }
   body .container-simular .input-field input {
     outline: none;
-    width: 474px;
+    width: 350px;
     height: 47px;
     border: 1px solid #9e9e9e;
     border-radius: 4px;

@@ -29,7 +29,7 @@ body {
             .side-bar {
                 width: 30%;
                 min-height: 100%;
-                background-image: url(/images/background-brasil.png);
+                background-image: url(../../../images/background-brasil.png);
                 background-position: center center;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -37,6 +37,12 @@ body {
 
             .campos {
                 display: flex;
+                margin-top: 16px;
+                .campo-first {
+                    margin-right: 16px;
+                }
+
+               
             }
 
             
@@ -59,6 +65,17 @@ body {
                 width: 100%;
                 max-width: 474px;
                 margin-left: 140px;
+
+                .input-field {
+                    .container-cep {
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: -15px;
+                        font-size: $font-sml;
+                        font-weight: 700;
+                        color: $dark;
+                    }
+                }
             }
         
             .container-field h1 {
@@ -99,7 +116,7 @@ body {
         
             .input-field input {
                 outline: none;
-                width: 474px;
+                width: 350px;
                 height: 47px;
                 border: 1px solid $grey-2;
                 border-radius: 4px;
